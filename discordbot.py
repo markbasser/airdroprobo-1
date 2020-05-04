@@ -180,25 +180,25 @@ async def on_message(message):
           q = await message.channel.send(f"\n:point_right:～:game_die:  _(Dice No.**1**)_:airplane:\n:partying_face:tada: **Airdrop!** \n\n୨୧┈┈┈┈┈┈┈┈┈୨୧\n\n/tip BGPT 6000 {message.author.mention}  <:BGPT02:698471366004965406> ")
           [await q.add_reaction(i) for i in ('<:heart02:699580174911668225>', '<:BGPT02:698471366004965406>')] # for文の内包表記
           
-     elif  3 < m < 30: #2～29
+     elif  1 < m < 30: #2～29
           q = await message.channel.send(f"\n:pinching_hand:～:game_die:  _(Dice2-29 )_ \n\n∽∽∽∽∽∽∽∽∽∽∽∽∽∽\n→mini drop:candy: \n∽∽∽∽∽∽∽∽∽∽∽∽∽∽\n\n/tip BGPT 10 {message.author.mention}  <:BGPTpink:705616860955148310>")
           [await q.add_reaction(i) for i in ('<:hai_kao:699072592987947117>', '<:BGPTpink:705616860955148310>')] # for文の内包表記
           
-     elif 31 < m < 60: #30～59
+     elif 29 < m < 60: #30～59
           await message.channel.send(f"\n:point_right:～:game_die:   _(Dice30-59 )_ \n\n∽∽∽∽∽∽∽∽∽∽∽∽∽∽\n→mini drop:candy: \n∽∽∽∽∽∽∽∽∽∽∽∽∽∽\n\n/tip BGPT 15 {message.author.mention}  <:BGPTpink:705616860955148310>")
           
-     elif 61 < m < 77: #60～76
+     elif 59 < m < 77: #60～76
           await message.channel.send(f"\n:pinching_hand:～:game_die:  _(Dice60-76)_ \n\n∽∽∽∽∽∽∽∽∽∽∽∽∽∽\n→mini drop:candy: \n∽∽∽∽∽∽∽∽∽∽∽∽∽∽\n\n/tip BGPT 7.77 {message.author.mention}  <:BGPTpink:705616860955148310>")
           
-     elif 78 < m < 78: #77～77
+     elif 76 < m < 78: #77～77
           q = await message.channel.send(f"\n:point_right:～:game_die:  _(Dice**77** )_ \n\n୨୧┈┈┈┈┈┈┈┈┈୨୧\n :balloon:**Jackpot!**\n\n\n:partying_face:tada: \n୨୧┈┈┈┈┈┈┈┈┈୨୧\n\n/tip BGPT 7000 {message.author.mention}  <:BGPT02:698471366004965406> ")
           [await q.add_reaction(i) for i in ('<:good01:699581068285706301>', '<:BGPT02:698471366004965406>')] # for文の内包表記
 
-     elif 79 < m < 90: #78～89
+     elif 77 < m < 90: #78～89
           q = await message.channel.send(f"\n:game_die::dash::leg:   _(Dice60-89)_ \n\n〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓\n **Dice Kick!** :dash: \n〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓\n\n <:namida1:699577954094809088>Don't kick the dice with your foot～ \n ダイスを足で蹴ったらだめよ～!なし ")
           [await q.add_reaction(i) for i in ('<:guru:699579775500681246>', '<:kanngaeru:699072662382837881>')] # for文の内包表記
 
-     elif 91 < m < 100: #90～99
+     elif 89 < m < 100: #90～99
           await message.channel.send(f"\n:point_right:～:game_die:  _(Dice90-99)_ \n\n∴‥∵‥∴‥∵‥∴‥∴‥∵‥∴\n→mini drop:candy: \n∴‥∵‥∴‥∵‥∴‥∴‥∵‥∴\n\n/tip BGPT 20 {message.author.mention}  <:BGPTpink:705616860955148310>")
             
      else: #それ以外なので今回の場合100が出た時に処理される
