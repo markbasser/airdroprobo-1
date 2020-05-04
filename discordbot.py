@@ -31,7 +31,7 @@ async def loop():
     
     if now == '04:10':
         channel = client.get_channel(CHANNEL_ID)
-        await channel.send('☆ワタシハエアドロップBOT‼:robot:☆Airdropの方法は適当にコメントする様にプロクラムされています。\nとても簡単!\nいつコメントするかは分かりません。CMDも変わったりします。お楽しみに:star2: \n @everyone :airplane:') 
+        await channel.send('☆ワタシハエアドロップBOT‼:robot:☆Airdropの方法は適当にコメントする様にプロクラムされています。\nとても簡単!\nいつコメントするかは分かりません。CMDも変わったりします。お楽しみにクダサイ:star2: \n @everyone :airplane:') 
     
     if now == '04:11':
         channel = client.get_channel(CHANNEL_ID)
@@ -39,7 +39,7 @@ async def loop():
     
     if now == '05:05':
         channel = client.get_channel(CHANNEL_ID)
-        await channel.send(':robot: HELLO!さて、 Airdrop方法は、ダイスです:game_die:！\n 指定のコマンドで、0～100までの数字をランダムに出します。その数字によって当たりが違います。\n :airplane: Airdrop賞が【0.1.77.100番】の4/100の確立です。:star2:\n mini Drop賞が【2～76番と90～99番】です。残念が77番号を抜いた【60～89番】となっています。\n 覚えていてね:star2:！とてもほとんどが当たりです。\n BOT残高がなくなったら　お。し。ま。い。以上です。わかりましたか？適当な説明でした　:airplane::robot:')  
+        await channel.send(':robot: HELLO!さて、 Airdrop方法は、サイコロ【Dice】です:game_die:AirdropDiceです。\n 指定のコマンドで、0～100までの数字をランダムに出します。その数字によって当たりが違います。\n :airplane: Airdrop賞が【0.1.77.100番】の4/100の確立です。:star2:\n mini Drop賞が【2～76番と90～99番】です。残念が、77番を抜いた【60～89番】となっています。\n 覚えていてね:star2:！ほとんどが当たりです。\n BOT残高がなくなったら　お。し。ま。い。以上です。わかりましたか？適当な説明でした　:airplane::robot:')  
 
     if now == '05:06':
         channel = client.get_channel(CHANNEL_ID)
@@ -177,7 +177,7 @@ async def on_message(message):
        m = int(num_random)
        await message.channel.send(m)
      if 0 < m < 2: #1～1
-          q = await message.channel.send(f"\n:point_right:～:game_die:  _(Dice No.**1**)_:airplane:\n:partying_face:tada: **Airdrop!** \n\n୨୧┈┈┈┈┈┈┈┈┈୨୧\n\n/tip BGPT 6000 {message.author.mention}  <:BGPT02:698471366004965406> ")
+          q = await message.channel.send(f"\n:point_right:～:game_die:  _(Dice No. **1**)_:airplane:\n:partying_face:tada: **Airdrop!** \n\n୨୧┈┈┈┈┈┈┈┈┈୨୧\n\n/tip BGPT 3333.77 {message.author.mention}  <:BGPT02:698471366004965406> ")
           [await q.add_reaction(i) for i in ('<:heart02:699580174911668225>', '<:BGPT02:698471366004965406>')] # for文の内包表記
           
      elif  1 < m < 30: #2～29
@@ -188,10 +188,10 @@ async def on_message(message):
           await message.channel.send(f"\n:point_right:～:game_die:   _(Dice30-59 )_ \n\n∽∽∽∽∽∽∽∽∽∽∽∽∽∽\n→mini drop:candy: \n∽∽∽∽∽∽∽∽∽∽∽∽∽∽\n\n/tip BGPT 15 {message.author.mention}  <:BGPTpink:705616860955148310>")
           
      elif 59 < m < 77: #60～76
-          await message.channel.send(f"\n:pinching_hand:～:game_die:  _(Dice60-76)_ \n\n∽∽∽∽∽∽∽∽∽∽∽∽∽∽\n→mini drop:candy: \n∽∽∽∽∽∽∽∽∽∽∽∽∽∽\n\n/tip BGPT 7.77 {message.author.mention}  <:BGPTpink:705616860955148310>")
+          await message.channel.send(f"\n:pinching_hand:～:game_die:  _(Dice60-76)_ \n\n∽∽∽∽∽∽∽∽∽∽∽∽∽∽\n→mini drop:candy: \n∽∽∽∽∽∽∽∽∽∽∽∽∽∽\n\n/tip BEN 7.77 {message.author.mention}  <:BGPTpink:705616860955148310>")
           
      elif 76 < m < 78: #77～77
-          q = await message.channel.send(f"\n:point_right:～:game_die:  _(Dice**77** )_ \n\n୨୧┈┈┈┈┈┈┈┈┈୨୧\n :balloon:**Jackpot!**\n\n\n:partying_face:tada: \n୨୧┈┈┈┈┈┈┈┈┈୨୧\n\n/tip BGPT 7000 {message.author.mention}  <:BGPT02:698471366004965406> ")
+          q = await message.channel.send(f"\n:point_right:～:game_die:  _(Dice**77** )_ \n\n୨୧┈┈┈┈┈┈┈┈┈୨୧\n :balloon:**Jackpot!**\n\n\n:partying_face:tada: \n୨୧┈┈┈┈┈┈┈┈┈୨୧\n\n/tip BGPT 3777.77 {message.author.mention}  <:BGPT02:698471366004965406> ")
           [await q.add_reaction(i) for i in ('<:good01:699581068285706301>', '<:BGPT02:698471366004965406>')] # for文の内包表記
 
      elif 77 < m < 90: #78～89
@@ -202,7 +202,7 @@ async def on_message(message):
           await message.channel.send(f"\n:point_right:～:game_die:  _(Dice90-99)_ \n\n∴‥∵‥∴‥∵‥∴‥∴‥∵‥∴\n→mini drop:candy: \n∴‥∵‥∴‥∵‥∴‥∴‥∵‥∴\n\n/tip BGPT 20 {message.author.mention}  <:BGPTpink:705616860955148310>")
             
      else: #それ以外なので今回の場合100が出た時に処理される
-          q = await message.channel.send(f"\n:point_right:～:game_die:  _(Dice**100**)_ \n\n୨୧┈┈┈┈┈┈┈┈┈୨୧\n:partying_face::tada: **Airdrop!** :rocket: \n୨୧┈┈┈┈┈┈┈┈┈୨୧\n\n/tip BGPT 5000 {message.author.mention}  <:BGPT02:698471366004965406> ")
+          q = await message.channel.send(f"\n:point_right:～:game_die:  _(Dice**100**)_ \n\n୨୧┈┈┈┈┈┈┈┈┈୨୧\n:partying_face::tada: **Airdrop!** :rocket: \n୨୧┈┈┈┈┈┈┈┈┈୨୧\n\n/tip BGPT 3456.78 {message.author.mention}  <:BGPT02:698471366004965406> ")
           [await q.add_reaction(i) for i in ('<:good01:699581068285706301>', '<:BGPT02:698471366004965406>')] # for文の内包表記
 
 
