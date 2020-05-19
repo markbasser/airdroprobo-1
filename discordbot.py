@@ -171,9 +171,9 @@ async def on_message(message):
      if client.user != message.author:
        num_random = random.randint(0, 100) #出る目を指定
        m = int(num_random)
-       await asyncio.sleep(1)
+       await asyncio.sleep(2)
        await message.channel.send(m)
-       await asyncio.sleep(3)
+       await asyncio.sleep(4)
      if 0 < m < 2: #1～1
           q = await message.channel.send(f"\n:point_right:rall～:game_die:  _(Dice→)_ :star2:No.:one: :star2: \n\n୨୧┈┈┈┈┈┈┈┈┈┈୨୧\n :airplane:\n:partying_face:tada: **Airdrop!**:confetti_ball: \n୨୧┈┈┈┈┈┈┈┈┈┈୨୧\n\n/tip BGPT 2345.6789 {message.author.mention}  <:BGPT02:698471366004965406> ")
           [await q.add_reaction(i) for i in ('<:heart02:699580174911668225>', '<:BGPT02:698471366004965406>')] # for文の内包表記
